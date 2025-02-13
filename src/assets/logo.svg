@@ -1,0 +1,20 @@
+<svg width="800" height="250" xmlns="http://www.w3.org/2000/svg">
+ <title>FASHION</title>
+ <defs>
+  <linearGradient spreadMethod="pad" y2="0" x2="1" y1="0" x1="0" id="svg_12">
+   <stop offset="0.10547" stop-opacity="0.99609" stop-color="#fcf3e0"/>
+   <stop offset="0.3125" stop-opacity="0.99609" stop-color="#000000"/>
+   <stop offset="0.66406" stop-opacity="0.99609" stop-color="#000000"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#000000"/>
+   <stop offset="NaN" stop-opacity="0" stop-color="0"/>
+   <stop offset="NaN" stop-opacity="0" stop-color="0"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <text font-weight="normal" font-style="italic" fill-opacity="0.78" transform="rotate(-0.156743 371.345 111.116) matrix(7.6642 0 0 10.0752 -885.502 -912.68)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="27" id="svg_1" y="110.73119" x="153.44259" stroke-width="0" fill="url(#svg_12)">H</text>
+  <text font-weight="bold" font-style="italic" transform="rotate(-0.156743 157.794 121.087) matrix(6.60247 0 0 8.35048 -721.681 -727.967)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_4" y="109.75446" x="111.28335" stroke-width="0" fill="#000000">FAS</text>
+  <text font-weight="bold" font-style="italic" transform="matrix(7.62824 0 0 8.13268 -1905.08 -1857.38)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_5" y="251.58625" x="305.73087" stroke-width="0" fill="#000000">ION</text>
+  <path d="m33.8,95.99999c1,3 7.62898,11.63972 12,20c3.52859,6.749 6,14.00001 7,16.00001c1,2 1.29289,3.29289 2,4c0.70711,0.70711 2,1 2,2c0,0 1,1 1,1c0,1 0.69255,1.186 2,3c0.8269,1.14726 0.94854,1.29869 2,3c1.17557,1.90211 3.29289,1.29289 4,2c0.70711,0.70711 0.69344,2.4588 2,3c0.92388,0.38269 1.15224,0.23463 3,1c2.61313,1.0824 8.03443,3.867 16,6c7.03235,1.8831 19,3 22,4l0,0l2,0l1,1" id="svg_6" stroke-width="0" stroke="#000" fill="none"/>
+ </g>
+</svg>
