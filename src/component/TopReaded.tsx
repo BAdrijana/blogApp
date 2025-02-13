@@ -10,7 +10,7 @@ function TopReaded() {
   return (
     <section className="container mt-4">
       <h2>Top Read</h2>
-      <div className="flex justify-between">
+      <div className="flex flex-wrap md:flex-row justify-between gap-4">
         {topReaded.slice(0, 3).map((item: BlogItem) => (
           <MainCard
             key={item.id}

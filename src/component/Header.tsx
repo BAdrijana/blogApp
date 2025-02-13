@@ -24,8 +24,8 @@ const Header: React.FC = () => {
     return <div>Loading or No Featured Post</div>; // Return early if no featured post
   }
   return (
-    <div className="flex w-[60%] p-4 py-5 content-center items-center mx-auto my-0">
-      <div className="w-[40%] h-auto relative aspect-[3/4]">
+    <div className="flex flex-col md:flex-row w-[90%] sm:w-[80%] lg:w-[60%] p-4 py-5 content-center items-center mx-auto my-0">
+      <div className="w-full md:w-[40%] h-auto relative aspect-[3/4]">
         <Image
           src={featuredPost.coverImg}
           alt="Cover image"
@@ -33,10 +33,11 @@ const Header: React.FC = () => {
           fill
         />
       </div>
-      <div className="ml-4 w-[60%] bg-red p-2">
-        <h1 className="h1 ">{featuredPost.title}</h1>
-        <div className="flex items-end justify-between pt-4">
-          <p className="w-[50%] pr-3 font-playfair font-light text-s leading-loose">
+
+      <div className="w-full md:w-[60%] bg-red p-2 mt-4 md:mt-0 md:ml-4">
+        <h1 className="h1">{featuredPost.title}</h1>
+        <div className="flex flex-col md:flex-row items-end justify-between pt-4">
+          <p className="w-full md:w-[50%] pr-3 font-playfair font-light text-s leading-loose">
             {featuredPost.shortDescription}
           </p>
           <Link
@@ -47,7 +48,7 @@ const Header: React.FC = () => {
               dispatch(blogItems.setActiveCategory(featuredPost.category));
               dispatch(blogItems.setActiveBlogPost(featuredPost.id));
             }}
-            className=" btn ml-3 inline-flex h-fit content-end items-center w-auto"
+            className="btn ml-3 inline-flex h-fit content-end items-center w-auto"
           >
             <Image src={asterisk} className="m-0.5" alt="" />
             Read more

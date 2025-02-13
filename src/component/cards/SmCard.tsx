@@ -24,12 +24,7 @@ function SmCard({ id, category, imageUrl, title }: MainCardProp) {
       className="flex items-start gap-2 "
     >
       <div className="w-[30%] h-auto relative aspect-[3/4]">
-        <Image
-          src={imageSrc}
-          alt="sm-card-img"
-          className="object-cover"
-          fill // Makes the image fill the container
-        />
+        <Image src={imageSrc} alt="sm-card-img" className="object-cover" fill />
       </div>
       <div className="flex flex-col justify-between p-2 pt-0 w-[60%]">
         <div>
