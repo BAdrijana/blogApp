@@ -1,20 +1,46 @@
 // import React from 'react'
 import Image from "next/image";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
+import Link from "next/link";
+import { useSelector, useDispatch } from "react-redux";
+import { blogItems } from "../utilis/store/blogItems";
+import { RootState } from "@/types/types";
 export default function Footer() {
+  const categories = useSelector(
+    (state: RootState) => state.blogItems.categories
+  );
+  const dispatch = useDispatch();
+  const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, "-");
+
   return (
-    <div className=" bg-black box-border w-[100vw] m-0 p-[2rem]">
-      <div className="max-w-full">
-        <h3 className="text-accent m-0">Categories</h3>
-        <ul className="flex flex-col w-full text-white">
-          <li>Fashion</li>
-          <li>Fashion</li>
-          <li>Fashion</li>
-        </ul>
+    <footer className=" bg-black w-[100vw] md:h-[25rem] py-5 m-0  flex flex-col justify-around items-center">
+      <div className="py-2">
+        <Link href="/">
+          <Image src={logo} alt="footer logo" width={200} height={150} />
+        </Link>
       </div>
       <div>
-        <Image className="w-5" src={logo} alt="" />
+        <ul className="flex flex-col center md:flex-row ">
+          {categories.map((category: string, index: number) => (
+            <Link
+              href={`/${slugify(category)}`}
+              key={index}
+              className="py-3 px-2 cursor-pointer text-primary hover:text-accent"
+              onClick={() => {
+                dispatch(blogItems.setActiveCategory(category));
+              }}
+            >
+              {category}
+            </Link>
+          ))}
+        </ul>
       </div>
-    </div>
+
+      <div className="w-[80%] md:w-[60%] mt-3  border-t border-solid border-opacity-50 border-primary ">
+        <p className="text-center mt-5 text-primary">
+          &copy; {new Date().getFullYear()} My Blog. All rights reserved.
+        </p>
+      </div>
+    </footer>
   );
 }

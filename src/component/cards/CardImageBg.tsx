@@ -21,7 +21,7 @@ function CardImageBg({ category, imageUrl, title }: MainCardProp) {
           <h3 className="text-white"> {title} </h3>
         </div>
         <div className="btn-2 border-white">
-          <span className="pl-4">Read more</span>
+          <span className="pl-4 hover:text-accent">Read more</span>
         </div>
       </div>
     </div>

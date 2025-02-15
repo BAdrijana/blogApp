@@ -26,7 +26,7 @@ function MainCard({ id, category, imageUrl, title }: MainCardProp) {
             dispatch(blogItems.setActiveBlogPost(id));
           }}
         >
-          <button>Read more</button>
+          <button className="hover:text-accent">Read more</button>
         </Link>
       </div>
     </div>

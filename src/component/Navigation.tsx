@@ -25,7 +25,7 @@ const Navigation = () => {
             <Link
               href={`/${slugify(category)}`}
               key={index}
-              className="py-1.5 px-2 cursor-pointer"
+              className="py-1.5 px-2 cursor-pointer hover:text-accent"
               onClick={() => {
                 dispatch(blogItems.setActiveCategory(category));
               }}
@@ -36,7 +36,7 @@ const Navigation = () => {
         </ul>
       </div>
       <div className=" w-[20%] flex justify-center border border-solid border-spacing-1 border-black border-l-0 ">
-        <Link href={"/login"} className="center">
+        <Link href={"/login"} className="center hover:text-accent">
           *Admin
         </Link>
       </div>
