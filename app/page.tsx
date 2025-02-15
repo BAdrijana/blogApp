@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
       <Layout>
+        <Header />
         <Main />
       </Layout>
     </div>
